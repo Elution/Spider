@@ -18,4 +18,5 @@ class MeijuPipeline(object):
         print(type(item))
         print(item['name'])
         print(item['order'])
+        print("--"*15)
         return item
