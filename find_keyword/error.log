@@ -1,0 +1,6 @@
+2018-09-05 09:24:32,171 - ERROR -re_text.py[:34]- error message
+2018-09-05 09:24:32,171 - CRITICAL -re_text.py[:35]- critical message
+2018-09-05 09:32:04,606 - ERROR -re_text.py[:39]- error message
+2018-09-05 09:32:04,606 - CRITICAL -re_text.py[:40]- critical message
+2018-09-05 09:32:21,552 - ERROR -re_text.py[:39]- error message
+2018-09-05 09:32:21,552 - CRITICAL -re_text.py[:40]- critical message
