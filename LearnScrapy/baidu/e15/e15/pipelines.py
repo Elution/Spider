@@ -12,11 +12,13 @@ class E15Pipeline(object):
         return item
 
 class MeijuPipeline(object):
+    def __init__(self):
+        self.file = open('meiju.json','a',encoding='utf-8')
+
     def process_item(self,item,spider):
-        with open('meiju.json','a',encoding='utf-8') as f:
-            json.dump(dict(item),f,ensure_ascii=False)
-        print(type(item))
-        print(item['name'])
-        print(item['order'])
-        print("--"*15)
+        txt = json.dumps(dict(item),ensure_ascii=False) + "\n"
+        self.file.write(txt)
         return item
+
+    def close_spider(self):
+        self.file.close()
